@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../javascript/input.js" charset="Shift_JIS"></script>
+  <script type="text/javascript" src="../javascript/inputDrop.js" charset="Shift_JIS"></script>
+  <script type="text/javascript" src="../javascript/output.js" charset="Shift_JIS"></script>
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<body>
+<!--  <form name="myform"> -->
+  <form action="" name="myform" method="post" enctype="multipart/form-data">
+
+    <div id="droppable">
+      <p>ファイルをドロップしてください。</p>
+　　　<label>もしくはファイルを選択</label>
+    　<input name="myfile" type="file" /><br />
+    </div>
+
+　　<div>
+      <div><input type="text" name="title" value=""/></div>
+      <textarea id="fileInput" name="output" cols="80" rows="10"></textarea>
+    </div>
+    <div>
+      <label>出力ファイル名を入力</label>
+      <input type="text" name="filename"/>
+      <button id="download" type="button" onclick="downloadCSV();">Download CSV</button><br />
+    </div>
+  </form>
+</body>
+</html>
